@@ -1,0 +1,68 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ @import "bootstrap-sprockets";
+ @import "bootstrap";
+
+
+.vinqulo-navbar {
+    padding: 20px 0;
+
+    .navbar-right {
+        padding-top: 5px;
+
+        li {
+
+            a {
+                text-transform: uppercase;
+                color: #2C3E50;
+                font-family: 'Source Sans Pro', sans-serif;
+                font-weight: 400;
+                font-size: 1em;
+
+            }
+            .vinqulo-login {
+                padding: 10px;
+                text-shadow: none;
+                outline: none;
+                -webkit-appearance: none;
+                -webkit-tap-highlight-color: transparent;
+                cursor: pointer;
+                text-align: center;
+                text-transform: uppercase;
+                height: 39px;
+                text-decoration: none;
+                border-radius: 3px;
+                background: transparent;
+                border: 1px solid #2C3E50;
+                color: #2C3E50;
+                font-size: 12px;
+                font-weight: 500;
+                box-shadow: none;
+                width: 84px;
+                margin-top: 4px;
+                margin-left: 15px;
+
+                &:hover {
+                    background: #2C3E50;
+                    color: #fff;
+                    border-color: #2C3E50;
+                    box-shadow: none;
+                }
+            }
+        }
+    }
+}
