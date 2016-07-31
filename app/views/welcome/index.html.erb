@@ -1,2 +1,142 @@
-<h1>Welcome#index</h1>
-<p>Find me in app/views/welcome/index.html.erb</p>
+<section id="video-hero">
+    <div class="container">
+        <div class="row">
+            <h1 class="text-center vinqulo-title">Investments Overseas. Learn more about us.</h1>
+            <p class="col-md-8 col-md-offset-2 text-center vinqulo-paragraph">Etsy austin selfies, wolf 3 wolf moon portland actually franzen dreamcatcher fashion axe squid hashtag twee raw denim.</p>
+            <div id="video" class="col-sm-8 col-md-offset-2">
+                <div class="placeholder">
+                    <a href="#"  class="play_btn" data-toggle="modal" data-target="#videoModal" data-theVideo="http://www.youtube.com/embed/loFtozxZG0s"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="section_1">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 vinqulo-intro-body">
+                <h2 class="text-center">Trusted By Industry Leaders, Small Business Owners &amp; Freelancers</h2>
+                <p class="text-center">Butcher beard gentrify, taxidermy literally kitsch XOXO vice. Venmo vice craft beer direct trade, readymade 8-bit actually synth mixtape poutine truffaut blog drinking vinegar.</p>
+            </div>
+            <div class="col-md-6 col-md-offset-3">
+                <hr>
+            </div>
+            <div class="col-md-8 col-md-offset-2 testimonial">
+                <div class="face-cont col-sm-2 hidden-xs">
+                    <span class="face face2"></span>
+                </div>
+                <blockquote class="col-sm-10">
+                    <p>
+                        Butcher beard gentrify, taxidermy literally kitsch XOXO vice. Venmo vice craft beer direct trade, readymade 8-bit actually synth mixtape.
+                    </p>
+                    <cite>Don Hutchings, Investor</cite>
+                </blockquote>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section id="promo">
+    <div class="container">
+        <h3 class="col-md-6 col-md-push-1">Butcher beard gentrify, taxidermy beard.</h3>
+        <div class="col-md-4 col-md-push-1">
+            <a href="/sign_up" class="fbtn btn-flat btn-promo btn-promo-track">CREATE AN ACCOUNT</a>
+        </div>
+    </div>
+</section>
+
+<section id="steps">
+    <div class="container">
+        <h2 class="text-center col-xs-12">how it works</h2>
+        <p class="text-center col-xs-12">We make sure you get your money when you need it. Here’s how it’s done:</p>
+
+        <div class="explain-block">
+            <span class="romb_icon">1</span>
+            <h3>create a free account in 20 seconds</h3>
+            <p>No approval process, no forms to fill, no phone calls to make and no obligation.</p>
+            <hr>
+        </div>
+        <div class="explain-block">
+            <span class="romb_icon">2</span>
+            <h3>create a free account in 20 seconds</h3>
+            <p>No approval process, no forms to fill, no phone calls to make and no obligation.</p>
+            <hr>
+        </div>
+        <div class="explain-block">
+            <span class="romb_icon">3</span>
+            <h3>create a free account in 20 seconds</h3>
+            <p>No approval process, no forms to fill, no phone calls to make and no obligation.</p>
+            <hr>
+        </div>
+        <div class="explain-block">
+            <span class="romb_icon">4</span>
+            <h3>create a free account in 20 seconds</h3>
+            <p>No approval process, no forms to fill, no phone calls to make and no obligation.</p>
+            <button class="get_started fbtn blue">try it now. risk free</button>
+        </div>
+    </div>
+</section>
+
+<section class="footer">
+    <div class="container">
+        <div class="col-lg-10 about-text">
+            <div class="col-lg-8">
+                Butcher beard gentrify, taxidermy literally kitsch XOXO vice. Venmo vice craft beer direct trade, readymade 8-bit actually synth mixtape poutine truffaut blog drinking vinegar. Kombucha tacos poutine, gochujang bespoke ugh iPhone. Messenger bag dreamcatcher brooklyn occupy, migas typewriter drinking vinegar church-key.
+            </div>
+            <ul class="col-lg-4 pull-right social">
+                <li><a href="#">Learn about us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Terms of Use &amp; Privacy Policy &amp; Disclaimers</a></li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section id="copyright">
+    <div class="container">
+        <div class="col-lg-12 col-sm-12 row" id="copy">
+            <span class="col-md-5">© 2016 Vinqulo, LLC</span>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+<!-- Header Video Modal -->
+<div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <div>
+                    <iframe width="100%" height="350" src=""></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- jQuery for Video Modal -->
+<script>
+    autoPlayYouTubeModal();
+
+    //FUNCTION TO GET AND AUTO PLAY YOUTUBE VIDEO FROM DATATAG
+    function autoPlayYouTubeModal() {
+        var trigger = $("body").find('[data-toggle="modal"]');
+        trigger.click(function () {
+            var theModal = $(this).data("target"),
+                videoSRC = $(this).attr("data-theVideo"),
+                videoSRCauto = videoSRC + "?autoplay=1";
+            $(theModal + ' iframe').attr('src', videoSRCauto);
+            $(theModal + ' button.close').click(function () {
+                $(theModal + ' iframe').attr('src', videoSRC);
+            });
+        });
+    }
+</script>

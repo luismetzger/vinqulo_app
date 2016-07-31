@@ -1,3 +1,333 @@
 // Place all the styles related to the welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+#video-hero {
+    background: #19BC9C;
+    min-height: 590px;
+    max-height: 590px;
+    padding: 80px 0 80px;
+
+    .vinqulo-title {
+        color: #fff;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: 300;
+        font-size: 3em;
+    }
+    .vinqulo-paragraph {
+        color: #fff;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: 500;
+        font-size: 1.4em;
+
+    }
+    #video {
+        position: relative;
+        height: 350px;
+        margin-top: 20px;
+        padding-left: 0;
+
+        .placeholder {
+            background: url('typeform.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: absolute;
+            bottom: 0;
+            border: 15px solid #2C3E50;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            border-bottom: 0;
+            width: 100%;
+            height: 100%;
+            color: #fff;
+
+            .play_btn {
+                background: url('https://fundbox.com/static/img/play_icon.svg') 50% 60% no-repeat;
+                position: relative;
+                display: block;
+                width: 100%;
+                height: 100%;
+                cursor: pointer;
+                -webkit-transition: opacity 200ms ease;
+                transition: opacity 200ms ease;
+
+                &:hover {
+                    opacity: 0.5;
+                }
+            }
+        }
+    }
+}
+
+#section_1 {
+
+    .vinqulo-intro-body {
+        padding: 80px 0 20px;
+
+        h2 {
+            color: #2C3E50;
+            font-family: 'Source Sans Pro', sans-serif;
+            font-weight: 300;
+            font-size: 3em;
+        }
+        p {
+            color: #2C3E50;
+            font-family: 'Source Sans Pro', sans-serif;
+            font-size: 1.2em;
+            font-weight: 400;
+            padding: 10px 0 0;
+        }
+    }
+    .testimonial {
+        margin-top: 20px;
+        overflow: hidden;
+        margin-bottom: 0;
+
+        .face-cont {
+            text-align: right;
+
+            .face2 {
+                background-image: url('https://fundbox.com/static/img/faces/don@2x.png?5861b1d5b1a2');
+            }
+            .face {
+                width: 67px;
+                height: 80px;
+                background-size: contain;
+                display: inline-block;
+            }
+        }
+        blockquote {
+            border: 0;
+            border-radius: 3px;
+            background: #f0f2f2;
+            padding: 20px;
+            margin-bottom: 0;
+
+            p {
+                font-size: 1em;
+                line-height: 1.5em;
+                font-family: 'Source Sans Pro', sans-serif;
+                font-weight: 400;
+                margin-bottom: 20px;
+            }
+            cite {
+                color: #999B9B;
+                font-family: 'Source Sans Pro', sans-serif;
+                font-size: 0.9em;
+                font-style: normal;
+            }
+        }
+    }
+}
+
+#promo {
+    margin: 80px 0 80px;
+    background: #9EE6DA;
+    height: 100px;
+    padding: 0;
+
+    .container {
+        padding-top: 35px;
+
+        h3 {
+            font-family: 'Source Sans Pro', sans-serif;
+            font-weight: 400;
+            font-size: 1.5em !important;
+            color: #2C3E50;
+            font-size: 20px;
+            margin-top: 5px;
+        }
+        .fbtn {
+            border-radius: 3px;
+            text-decoration: none;
+            line-height: 39px;
+            width: 260px;
+            height: 39px;
+            display: inline-block;
+            cursor: pointer;
+            text-align: center;
+            text-transform: uppercase;
+            position: relative;
+            -webkit-appearance: none;
+            -webkit-tap-highlight-color: transparent;
+            outline: none;
+            padding: 0;
+            text-shadow: none;
+        }
+        .btn-flat {
+            background: transparent;
+            border: 1px solid #2C3E50;
+            color: #2C3E50;
+            font-weight: 400;
+            box-shadow: none;
+        }
+        .btn-promo {
+            font-size: 1em;
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+        .btn-flat {
+            margin-top: -5px;
+
+            &:hover {
+                background: #2C3E50;
+                color: #fff;
+                border-color: #2C3E50;
+                box-shadow: none;
+            }
+        }
+    }
+}
+
+#steps {
+    padding: 0px 0 80px;
+    background: #fff;
+    z-index: 10;
+    position: relative;
+
+    h2 {
+        margin-top: 0;
+        margin-bottom: 20px;
+        font-size: 3em;
+        text-transform: capitalize;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: 300;
+        color: #2C3E50;
+    }
+    p {
+        color: #2C3E50;
+        font-size: 1.5em;
+        line-height: 1.5em;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: 400;
+        margin-bottom: 55px;
+    }
+    .explain-block {
+        width: 300px;
+        margin: 0 auto;
+        text-align: center;
+
+        .romb_icon {
+            background: url('https://fundbox.com/static/img/romb.svg?578a45c8b778') no-repeat;
+            width: 30px;
+            display: inline-block;
+            height: 36px;
+            color: #19BC9C;
+            text-align: center;
+            font-size: 18px;
+            line-height: 36px;
+        }
+        h3 {
+            font-family: 'Source Sans Pro', sans-serif;
+            font-weight: 300;
+            font-size: 1.2em;
+            padding-top: 4px;
+            padding-bottom: 0px;
+            margin-bottom: 5px;
+            color: #2C3E50;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        p {
+            font-family: 'Source Sans Pro', sans-serif;
+            font-weight: 300;
+            font-size: 1em;
+            margin: 0 0 10px;
+            color: #999B9B;
+        }
+        hr {
+            padding-top: 50px;
+            width: 220px;
+            border-bottom: 1px solid #D2D4D4;
+            border-top: 0;
+        }
+        .fbtn {
+            font-family: 'Source Sans Pro', sans-serif;
+            font-weight: 300;
+            font-size: 1em;
+            border-radius: 3px;
+            color: #fff;
+            text-decoration: none;
+            font-size: 14px;
+            line-height: 39px;
+            height: 39px;
+            display: inline-block;
+            cursor: pointer;
+            text-align: center;
+            text-transform: uppercase;
+            position: relative;
+            -webkit-appearance: none;
+            -webkit-tap-highlight-color: transparent;
+            outline: none;
+            padding: 0;
+            text-shadow: none;
+        }
+        .blue {
+            background: #2C3E50;
+            box-shadow: none;
+            border: 0;
+
+            &:hover {
+                background: linear-gradient(-180deg,#445D77 0%,#2C3E50 100%);
+            }
+        }
+        .fbtn {
+            width: 300px;
+            margin-top: 60px;
+        }
+    }
+}
+
+.footer {
+    padding: 80px 0 80px;
+    background: #2c3e50;
+    color: #fff;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    position: relative;
+    z-index: 0;
+    .container {
+        max-width: 940px!important;
+
+        .about-text {
+            line-height: 28px;
+        }
+        ul {
+            padding-left: 75px;
+
+            li {
+                display: block;
+                padding-right: 10px;
+                padding-bottom: 10px;
+
+                a {
+                    font-family: 'Source Sans Pro', sans-serif;
+                    font-weight: 300;
+                    color: #19BC9C;
+
+                    &:hover {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#copyright {
+    background: #19BC9C;
+
+    .container {
+        max-width: 940px!important;
+
+        #copy {
+            color: #9EE6DA;
+            height: 100px;
+            line-height: 100px;
+
+            span {
+                font-family: 'Source Sans Pro', sans-serif;
+                font-weight: 300;
+                color: #fff;
+            }
+        }
+    }
+}
