@@ -4,13 +4,8 @@ class WelcomeController < ApplicationController
       render :index
   end
 
-  def how_it_works
-
-      render text: "How it works page"
-  end
-
   def about_us
 
-      render text: "About us page"
+      render :about_us
   end
 end
