@@ -18,6 +18,8 @@ gem 'coffee-rails', '~> 4.2'
 
 gem 'jquery-turbolinks'
 
+gem "font-awesome-rails"
+
 gem 'bootstrap-sass', '~> 3.3.6'
 
 # Use jquery as the JavaScript library

@@ -16,8 +16,25 @@
 
  @import "bootstrap-sprockets";
  @import "bootstrap";
+ @import "font-awesome";
+ @import "venobox";
 
+ a {
+     &:focus {
+         outline: none;
+     }
+     &:visited {
+         outline: none;
+     }
+ }
 
+p {
+    color: #434343;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: 434343;
+}
 .vinqulo-navbar {
     padding: 20px 0;
     margin-bottom: 0;

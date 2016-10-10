@@ -14,6 +14,7 @@
 //= require jquery_ujs
 //= require jquery.turbolinks
 //= require bootstrap-sprockets
+//= require venobox.js
 //= require turbolinks
 //= require_tree .
 
@@ -32,4 +33,6 @@ $(document).on('turbolinks:load', function() {
     	target: '#leftCol',
     	offset: navHeight
     });
+
+    $('.venobox').venobox(); 
 });
