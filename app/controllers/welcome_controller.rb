@@ -4,8 +4,29 @@ class WelcomeController < ApplicationController
       render :index
   end
 
-  def about_us
+  def institutional_partners
 
-      render :about_us
+
+      render :institutional_partners, layout: 'company'
+  end
+  def custom_products
+
+
+      render :custom_products, layout: 'company'
+  end
+  def fx_products
+
+
+      render :fx_products, layout: 'company'
+  end
+  def corporate_ethics
+
+
+      render :corporate_ethics, layout: 'company'
+  end
+  def intro_to_pi
+
+
+      render :intro_to_pi, layout: 'company'
   end
 end

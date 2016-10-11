@@ -34,5 +34,5 @@ $(document).on('turbolinks:load', function() {
     	offset: navHeight
     });
 
-    $('.venobox').venobox(); 
+    $('.venobox').venobox().trigger('click');
 });
