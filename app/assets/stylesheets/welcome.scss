@@ -2,9 +2,13 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 #video-hero {
-    background: #E86F24;
-    min-height: 590px;
-    max-height: 590px;
+    // background: #E86F24;
+    background-image: url('vinqulo-video.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    min-height: 898px;
+    max-height: 898px;
     padding: 80px 0 80px;
 
     .vinqulo-title {
@@ -20,7 +24,7 @@
         font-size: 1.4em;
 
     }
-    #video {
+    .video {
         position: relative;
         width: 100%;
         height: 350px;
@@ -28,18 +32,18 @@
         padding-left: 0;
 
         .placeholder {
-            background: url('typeform.png');
-            background-repeat: no-repeat;
-            background-size: cover;
-            position: absolute;
-            bottom: 0;
-            border: 15px solid #2C3E50;
-            border-top-left-radius: 15px;
-            border-top-right-radius: 15px;
-            border-bottom: 0;
-            width: 100%;
-            height: 100%;
-            color: #fff;
+            // background: url('typeform.png');
+            // background-repeat: no-repeat;
+            // background-size: cover;
+            // position: absolute;
+            // bottom: 0;
+            // border: 15px solid #2C3E50;
+            // border-top-left-radius: 15px;
+            // border-top-right-radius: 15px;
+            // border-bottom: 0;
+            // width: 100%;
+            // height: 100%;
+            // color: #fff;
 
             .play_btn {
                 background: url('vinqulo-video.png') 50% 60% no-repeat;
@@ -64,6 +68,19 @@
                 }
             }
         }
+
+        #youtube-video{
+         position: relative;
+         background: transparent;
+         overflow: hidden;
+        }
+
+        .ytplayer-container{
+         position: absolute;
+         top: 0;
+         z-index: 2;
+         overflow: hidden;
+        }
     }
 }
 
@@ -71,6 +88,7 @@
 
     .vinqulo-intro-body {
         padding: 80px 0 20px;
+        z-index: -1;
 
         h2 {
             color: #2C3E50;

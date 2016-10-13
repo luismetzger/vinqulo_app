@@ -15,6 +15,7 @@
 //= require jquery.turbolinks
 //= require bootstrap-sprockets
 //= require venobox.js
+//= require jquery.youtubebackground.js
 //= require turbolinks
 //= require_tree .
 
@@ -35,4 +36,10 @@ $(document).on('turbolinks:load', function() {
     });
 
     $('.venobox').venobox().trigger('click');
+
+    $('#youtube-video').YTPlayer({
+        fitToBackground: false,
+        videoId: 'LBI2iyLr9zE',
+        autohide: 1
+    });
 });

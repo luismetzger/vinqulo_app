@@ -28,11 +28,11 @@
         <div class="collapse navbar-collapse" id="navbar-collapse-2">
           <ul class="nav navbar-nav navbar-right">
             <li><%= link_to 'Home', root_path %></li>
-            <li><%= link_to 'About Us', institutional_partners_path %></li>
-            <!-- <li><a href="#">Custom Products</a></li>
-            <li><a href="#">FX Products</a></li>
-            <li><a href="#">Corporate Ethics</a></li>
-            <li><a href="#">Intro to PI</a></li> -->
+            <li><%= link_to 'Institutional Partners', institutional_partners_path %></li>
+            <li><%= link_to 'Custom Products', custom_products_path %></li>
+            <li><%= link_to 'FX Products', fx_products_path %></li>
+            <li><%= link_to 'Corporate Ethics', corporate_ethics_path %></li>
+            <li><%= link_to 'Intro to PI', intro_to_pi_path %></li>
             <li>
               <!-- <a class="btn btn-default btn-outline btn-circle collapsed vinqulo-login"  data-toggle="collapse" href="#nav-collapse2" aria-expanded="false" aria-controls="nav-collapse2">Login</a> -->
               <%= link_to 'Login', login_path, :class => 'btn btn-default btn-outline btn-circle vinqulo-login' %>
@@ -62,10 +62,18 @@
   <section class="footer">
       <div class="container">
           <div class="col-lg-10 about-text">
-              <div class="col-lg-8">
-                  Butcher beard gentrify, taxidermy literally kitsch XOXO vice. Venmo vice craft beer direct trade, readymade 8-bit actually synth mixtape poutine truffaut blog drinking vinegar. Kombucha tacos poutine, gochujang bespoke ugh iPhone. Messenger bag dreamcatcher brooklyn occupy, migas typewriter drinking vinegar church-key.
+              <div class="col-md-8 testimonial">
+                  <div class="face-cont col-sm-2 hidden-xs">
+                      <span class="face face2"></span>
+                  </div>
+                  <blockquote class="col-md-10 col-md-push-1">
+                      <p>
+                          The software has been a proven winner.
+                      </p>
+                      <cite>Don Hutchings, Investor</cite>
+                  </blockquote>
               </div>
-              <ul class="col-lg-4 pull-right social">
+              <ul class="col-lg-4 col-md-push-2 social">
                   <li><%= link_to 'Institutional Partners', institutional_partners_path %></li>
                   <li><%= link_to 'Custom Products', custom_products_path %></li>
                   <li><%= link_to 'FX Products', fx_products_path %></li>
@@ -80,7 +88,7 @@
   <section id="copyright">
       <div class="container">
           <div class="col-lg-12 col-sm-12 row" id="copy">
-              <span class="col-md-5">© 2016 Vinqulo, LLC</span>
+              <span class="col-md-5">© 2016 Vinqulo, Inc</span>
           </div>
       </div>
   </section>
