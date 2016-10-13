@@ -73,7 +73,7 @@ if (typeof Object.create !== "function") {
       videoId: 'LSmgKRx5pBo',
       mute: true,
       repeat: true,
-      width: $(window).width(),
+      width: '350px',
       playButtonClass: 'YTPlayer-play',
       pauseButtonClass: 'YTPlayer-pause',
       muteButtonClass: 'YTPlayer-mute',
